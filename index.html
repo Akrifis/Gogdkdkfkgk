@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Re:Voice Anime - Смотреть аниме с озвучкой Re:Voice</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <div class="logo-icon">
+                    <i class="fas fa-microphone-alt"></i>
+                </div>
+                <div class="logo-text">
+                    <h1>Re:Voice <span class="highlight">Anime</span></h1>
+                    <p>Премиальная озвучка от студии Re:Voice</p>
+                </div>
+            </div>
+            <nav class="nav">
+                <ul>
+                    <li><a href="#" class="nav-link active"><i class="fas fa-home"></i> Главная</a></li>
+                    <li><a href="#anime-list" class="nav-link"><i class="fas fa-film"></i> Каталог</a></li>
+                    <li><a href="#new" class="nav-link"><i class="fas fa-star"></i> Новинки</a></li>
+                    <li><a href="#about" class="nav-link"><i class="fas fa-info-circle"></i> О проекте</a></li>
+                </ul>
+            </nav>
+            <div class="user-menu">
+                <button class="search-toggle" id="searchToggle">
+                    <i class="fas fa-search"></i>
+                </button>
+                <div class="search-box" id="searchBox">
+                    <input type="text" id="search-input" placeholder="Поиск аниме...">
+                    <button id="search-btn"><i class="fas fa-search"></i></button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="main">
+        <section class="hero">
+            <div class="hero-overlay"></div>
+            <div class="container">
+                <div class="hero-content">
+                    <h2>Погрузитесь в мир аниме</h2>
+                    <p class="hero-subtitle">Лучшая озвучка от профессиональной студии Re:Voice. Эксклюзивные релизы и высочайшее качество звука.</p>
+                    <div class="hero-stats">
+                        <div class="stat">
+                            <i class="fas fa-play-circle"></i>
+                            <span>500+</span>
+                            <p>Аниме в каталоге</p>
+                        </div>
+                        <div class="stat">
+                            <i class="fas fa-microphone-alt"></i>
+                            <span>100%</span>
+                            <p>Профессиональная озвучка</p>
+                        </div>
+                        <div class="stat">
+                            <i class="fas fa-clock"></i>
+                            <span>24/7</span>
+                            <p>Доступ в любое время</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="new-anime" id="new">
+            <div class="container">
+                <div class="section-header">
+                    <h2><i class="fas fa-fire"></i> Новые поступления</h2>
+                    <p>Свежие релизы с озвучкой Re:Voice</p>
+                </div>
+                <div class="new-anime-slider" id="newAnimeSlider">
+                    <!-- Слайдер будет заполнен через JS -->
+                </div>
+            </div>
+        </section>
+
+        <section class="anime-list" id="anime-list">
+            <div class="container">
+                <div class="section-header">
+                    <h2><i class="fas fa-list"></i> Полный каталог</h2>
+                    <div class="view-controls">
+                        <button class="view-btn active" data-view="grid"><i class="fas fa-th"></i></button>
+                        <button class="view-btn" data-view="list"><i class="fas fa-list"></i></button>
+                    </div>
+                </div>
+                
+                <div class="filters">
+                    <button class="filter-btn active" data-filter="all">Все тайтлы</button>
+                    <button class="filter-btn" data-filter="ongoing">Сейчас выходит</button>
+                    <button class="filter-btn" data-filter="completed">Завершённые</button>
+                    <button class="filter-btn" data-filter="movie">Фильмы</button>
+                    <button class="filter-btn" data-filter="dub">Полная озвучка</button>
+                </div>
+
+                <div class="anime-container grid-view" id="anime-container">
+                    <!-- Аниме загружаются через API -->
+                    <div class="loading">
+                        <div class="spinner"></div>
+                        <p>Загружаем каталог аниме...</p>
+                    </div>
+                </div>
+
+                <div class="pagination" id="pagination">
+                    <!-- Пагинация будет добавлена через JS -->
+                </div>
+            </div>
+        </section>
+
+        <section class="features">
+            <div class="container">
+                <div class="section-header">
+                    <h2><i class="fas fa-crown"></i> Преимущества Re:Voice</h2>
+                </div>
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-volume-up"></i>
+                        </div>
+                        <h3>Качественная озвучка</h3>
+                        <p>Профессиональные актёры и студийное оборудование обеспечивают кристально чистый звук</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-bolt"></i>
+                        </div>
+                        <h3>Быстрые релизы</h3>
+                        <p>Новые эпизоды появляются сразу после выхода оригинала в Японии</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-closed-captioning"></i>
+                        </div>
+                        <h3>Субтитры</h3>
+                        <p>Точные и проверенные субтитры ко всем выпускам</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-mobile-alt"></i>
+                        </div>
+                        <h3>Адаптивный дизайн</h3>
+                        <p>Смотрите на любом устройстве: смартфоне, планшете или компьютере</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer" id="about">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <div class="logo">
+                        <div class="logo-icon">
+                            <i class="fas fa-microphone-alt"></i>
+                        </div>
+                        <div class="logo-text">
+                            <h3>Re:Voice <span class="highlight">Anime</span></h3>
+                        </div>
+                    </div>
+                    <p class="footer-description">Проект посвящён аниме с озвучкой от студии Re:Voice. Все права на озвучку принадлежат студии Re:Voice.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fab fa-telegram"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-vk"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-discord"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h4>Категории</h4>
+                        <ul>
+                            <li><a href="#">Популярные</a></li>
+                            <li><a href="#">Новые</a></li>
+                            <li><a href="#">Сейчас смотрят</a></li>
+                            <li><a href="#">Фильмы</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Поддержка</h4>
+                        <ul>
+                            <li><a href="#">Помощь</a></li>
+                            <li><a href="#">FAQ</a></li>
+                            <li><a href="#">Контакты</a></li>
+                            <li><a href="#">Сообщить о проблеме</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h4>О нас</h4>
+                        <ul>
+                            <li><a href="#">О проекте</a></li>
+                            <li><a href="#">Студия Re:Voice</a></li>
+                            <li><a href="#">Партнёрство</a></li>
+                            <li><a href="#">Правовая информация</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>© 2024 Re:Voice Anime Project. Все права на аниме принадлежат их правообладателям. Озвучка от студии Re:Voice.</p>
+                <p class="disclaimer">Данный сайт является фанатским проектом и создан в некоммерческих целях.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/api.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
