@@ -1,0 +1,47 @@
+[
+  {
+    "id": "attack-on-titan",
+    "title": "Атака Титанов",
+    "description": "Человечество выживает в городах-крепостях, защищаясь от гигантских существ - титанов. История Эрена Йегера и его друзей, сражающихся за выживание человечества.",
+    "year": "2013",
+    "episodes": "88",
+    "status": "completed",
+    "type": "series",
+    "genre": ["Экшен", "Драма", "Фэнтези", "Триллер"],
+    "poster": "https://images.unsplash.com/photo-1639322537228-f710d846310a?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80",
+    "voice": "Re:Voice",
+    "watch_page": "attack-on-titan.html",
+    "is_new": false,
+    "rating": 9.0
+  },
+  {
+    "id": "demon-slayer",
+    "title": "Истребитель демонов",
+    "description": "Тандзиро Камадо становится истребителем демонов, чтобы вернуть человеческий облик своей сестре Незуко. Путешествие полное сражений и самопожертвования.",
+    "year": "2019",
+    "episodes": "55+",
+    "status": "ongoing",
+    "type": "series",
+    "genre": ["Экшен", "Фэнтези", "Приключения", "Демоны"],
+    "poster": "https://images.unsplash.com/photo-1578662996442-48f60103fc96?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80",
+    "voice": "Re:Voice",
+    "watch_page": "demon-slayer.html",
+    "is_new": true,
+    "rating": 8.7
+  },
+  {
+    "id": "jujutsu-kaisen",
+    "title": "Магическая битва",
+    "description": "Юдзи Итадори присоединяется к секретной организации магов для борьбы с проклятиями после того, как съел палец могущественного проклятия.",
+    "year": "2020",
+    "episodes": "47+",
+    "status": "ongoing",
+    "type": "series",
+    "genre": ["Экшен", "Фэнтези", "Сверхъестественное", "Хоррор"],
+    "poster": "https://images.unsplash.com/photo-1639322537502-d3b0c16c4bbb?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80",
+    "voice": "Re:Voice",
+    "watch_page": "jujutsu-kaisen.html",
+    "is_new": true,
+    "rating": 8.6
+  }
+]
